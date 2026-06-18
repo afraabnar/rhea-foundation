@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Updates & Newsletter — Rhea Mothers Alliance Foundation</title>
+  <meta name="description" content="Subscribe to updates on our projects, stories, and ways to get involved with Rhea Mothers Alliance Foundation." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-mark">R</div>
+      <div class="nav-logo-text">
+        Rhea Mothers Alliance
+        <span>Foundation</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html" data-copy="nav.home">Home</a></li>
+      <li><a href="about.html" data-copy="nav.mission">Mission</a></li>
+      <li><a href="projects.html" data-copy="nav.projects">Projects</a></li>
+      <li><a href="updates.html" class="active" data-copy="nav.updates">Updates</a></li>
+      <li><a href="donate.html" class="btn-donate-nav" data-copy="nav.donate">Donate</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html" data-copy="nav.home">Home</a>
+    <a href="about.html" data-copy="nav.mission">Mission</a>
+    <a href="projects.html" data-copy="nav.projects">Projects</a>
+    <a href="updates.html" data-copy="nav.updates">Updates</a>
+    <a href="donate.html" data-copy="nav.donate">Donate</a>
+  </div>
+
+  <!-- HERO for this page -->
+  <section class="hero" style="background: linear-gradient(135deg, #8B4A5A 0%, #5A2D3F 100%); min-height: 40vh;">
+    <div class="container">
+      <div class="hero-inner" style="align-items: center; justify-content: center; text-align: center;">
+        <div class="hero-content" style="max-width: 700px;">
+          <span class="hero-tag" data-copy="pages.updates.hero.tag">Stay Connected</span>
+          <h1 data-copy="pages.updates.hero.heading">Latest Updates</h1>
+          <p class="hero-desc" data-copy="pages.updates.hero.description">Get the latest news, stories, and ways to support mothers in our community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-text">
+          <span class="eyebrow" style="color: var(--gold);" data-copy="pages.updates.newsletter.eyebrow">Stay Connected</span>
+          <h2 data-copy="pages.updates.newsletter.heading">Join Our Circle</h2>
+          <p data-copy="pages.updates.newsletter.description">Sign up to receive updates on our projects, stories from the mothers we serve, upcoming events, and new ways to get involved or donate. We send only what matters — no noise.</p>
+        </div>
+
+        <div class="newsletter-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name" data-copy="pages.updates.form.firstName">First Name</label>
+              <input type="text" id="first-name" data-copy="pages.updates.form.firstName" placeholder="Your first name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name" data-copy="pages.updates.form.lastName">Last Name</label>
+              <input type="text" id="last-name" data-copy="pages.updates.form.lastName" placeholder="Your last name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" data-copy="pages.updates.form.email">Email Address</label>
+              <input type="email" id="email" data-copy="pages.updates.form.email" placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="interest" data-copy="pages.updates.form.interest">I'm most interested in</label>
+            <select id="interest" data-copy-options="pages.updates.form.options" style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; padding: 0.75rem 1rem; font-family: 'Inter', sans-serif; font-size: 15px; color: white; outline: none; width: 100%; appearance: none; cursor: pointer;"></select>
+          </div>
+          <button class="btn btn-primary" id="subscribe-btn" style="width: 100%; margin-top: 0.5rem; font-size: 15px;" data-copy="pages.updates.form.subscribe">Subscribe to Updates</button>
+          <div class="success-msg" id="success-msg" data-copy="pages.updates.form.success">
+            ✓ You're in! Welcome to the Rhea community. We'll be in touch.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <div class="nav-logo-mark" style="background: var(--crimson);">R</div>
+            <div style="font-family:'Playfair Display',serif; font-size:16px; font-weight:700; color:white; line-height:1.2;">
+              Rhea Mothers Alliance<br>
+              <span style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.4);">Foundation</span>
+            </div>
+          </div>
+          <p>Empowering mothers, transforming communities. A non-profit organization dedicated to the well-being of mothers and families.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">Mission</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:hello@rheafoundation.org">hello@rheafoundation.org</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Rhea Mothers Alliance Foundation. All rights reserved.</span>
+        <span>Made with purpose · <a href="#">Privacy Policy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/copy.js"></script>
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // Newsletter form
+    document.getElementById('subscribe-btn').addEventListener('click', function() {
+      const email = document.getElementById('email').value.trim();
+      const firstName = document.getElementById('first-name').value.trim();
+      if (!email || !email.includes('@')) {
+        document.getElementById('email').style.borderColor = '#C2304F';
+        document.getElementById('email').focus();
+        return;
+      }
+      this.textContent = 'Subscribed!';
+      this.disabled = true;
+      this.style.background = '#3B6D11';
+      document.getElementById('success-msg').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

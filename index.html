@@ -21,11 +21,11 @@
       </div>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="#mission">Mission</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#newsletter">Updates</a></li>
-      <li><a href="pages/donate.html" class="btn-donate-nav">Donate</a></li>
+      <li><a href="index.html" class="active" data-copy="nav.home">Home</a></li>
+      <li><a href="pages/about.html" data-copy="nav.mission">Mission</a></li>
+      <li><a href="pages/projects.html" data-copy="nav.projects">Projects</a></li>
+      <li><a href="pages/updates.html" data-copy="nav.updates">Updates</a></li>
+      <li><a href="pages/donate.html" class="btn-donate-nav" data-copy="nav.donate">Donate</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
@@ -33,11 +33,11 @@
   </nav>
 
   <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="#mission">Mission</a>
-    <a href="#projects">Projects</a>
-    <a href="#newsletter">Updates</a>
-    <a href="pages/donate.html">Donate</a>
+    <a href="index.html" data-copy="nav.home">Home</a>
+    <a href="pages/about.html" data-copy="nav.mission">Mission</a>
+    <a href="pages/projects.html" data-copy="nav.projects">Projects</a>
+    <a href="pages/updates.html" data-copy="nav.updates">Updates</a>
+    <a href="pages/donate.html" data-copy="nav.donate">Donate</a>
   </div>
 
   <!-- HERO -->
@@ -46,25 +46,25 @@
     <div class="container">
       <div class="hero-inner">
         <div class="hero-content">
-          <span class="hero-tag">Empowering Mothers Since 2020</span>
-          <h1>Every Mother Deserves to <em>Thrive</em></h1>
-          <p class="hero-desc">Rhea Mothers Alliance Foundation builds stronger families and communities by supporting mothers through education, advocacy, and sisterhood.</p>
+          <span class="hero-tag" data-copy="pages.index.hero.tag">Empowering Mothers Since 2020</span>
+          <h1 data-copy-html="pages.index.hero.heading">Every Mother Deserves to <em>Thrive</em></h1>
+          <p class="hero-desc" data-copy="pages.index.hero.description">Rhea Mothers Alliance Foundation builds stronger families and communities by supporting mothers through education, advocacy, and sisterhood.</p>
           <div class="hero-ctas">
-            <a href="pages/donate.html" class="btn btn-primary">Make a Donation</a>
-            <a href="#mission" class="btn btn-outline" style="color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.3);">Our Mission</a>
+            <a href="pages/donate.html" class="btn btn-primary" data-copy="pages.index.hero.primaryCta">Make a Donation</a>
+            <a href="pages/about.html" class="btn btn-outline" style="color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.3);" data-copy="pages.index.hero.secondaryCta">Our Mission</a>
           </div>
           <div class="hero-stats">
             <div class="hero-stat">
-              <span class="hero-stat-num">500+</span>
-              <span class="hero-stat-label">Mothers Supported</span>
+              <span class="hero-stat-num" data-copy="pages.index.stats.0.num">500+</span>
+              <span class="hero-stat-label" data-copy="pages.index.stats.0.label">Mothers Supported</span>
             </div>
             <div class="hero-stat">
-              <span class="hero-stat-num">2</span>
-              <span class="hero-stat-label">Active Projects</span>
+              <span class="hero-stat-num" data-copy="pages.index.stats.1.num">2</span>
+              <span class="hero-stat-label" data-copy="pages.index.stats.1.label">Active Projects</span>
             </div>
             <div class="hero-stat">
-              <span class="hero-stat-num">12</span>
-              <span class="hero-stat-label">Communities Reached</span>
+              <span class="hero-stat-num" data-copy="pages.index.stats.2.num">12</span>
+              <span class="hero-stat-label" data-copy="pages.index.stats.2.label">Communities Reached</span>
             </div>
           </div>
         </div>
@@ -84,213 +84,83 @@
     </div>
   </section>
 
+  <!-- QUICK LINKS TO SECTIONS -->
+  <section class="section" style="background: white;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="eyebrow">Explore Our Work</span>
+        <h2>Everything You Need to Know</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+        <!-- Mission Card -->
+        <a href="pages/about.html" style="text-decoration: none; padding: 2rem; border-radius: 8px; background: #f5f5f5; transition: all 0.3s ease; cursor: pointer; display: flex; flex-direction: column; gap: 1rem;">
+          <div style="font-size: 32px;">🤝</div>
+          <h3 style="color: var(--crimson); margin: 0; font-size: 20px;" data-copy="pages.index.cards.0.title">Our Mission</h3>
+          <p style="color: var(--muted); margin: 0;" data-copy="pages.index.cards.0.description">Standing together, rising together. Learn about our vision and values.</p>
+        </a>
+
+        <!-- Projects Card -->
+        <a href="pages/projects.html" style="text-decoration: none; padding: 2rem; border-radius: 8px; background: #f5f5f5; transition: all 0.3s ease; cursor: pointer; display: flex; flex-direction: column; gap: 1rem;">
+          <div style="font-size: 32px;">💪</div>
+          <h3 style="color: var(--crimson); margin: 0; font-size: 20px;" data-copy="pages.index.cards.1.title">Our Projects</h3>
+          <p style="color: var(--muted); margin: 0;" data-copy="pages.index.cards.1.description">MamaWell and Rise & Lead — transforming lives through targeted support.</p>
+        </a>
+
+        <!-- Impact Card -->
+        <a href="pages/impact.html" style="text-decoration: none; padding: 2rem; border-radius: 8px; background: #f5f5f5; transition: all 0.3s ease; cursor: pointer; display: flex; flex-direction: column; gap: 1rem;">
+          <div style="font-size: 32px;">📊</div>
+          <h3 style="color: var(--crimson); margin: 0; font-size: 20px;" data-copy="pages.index.cards.2.title">Our Impact</h3>
+          <p style="color: var(--muted); margin: 0;" data-copy="pages.index.cards.2.description">500+ mothers supported across 12 communities with 95% satisfaction.</p>
+        </a>
+
+        <!-- Updates Card -->
+        <a href="pages/updates.html" style="text-decoration: none; padding: 2rem; border-radius: 8px; background: #f5f5f5; transition: all 0.3s ease; cursor: pointer; display: flex; flex-direction: column; gap: 1rem;">
+          <div style="font-size: 32px;">📬</div>
+          <h3 style="color: var(--crimson); margin: 0; font-size: 20px;" data-copy="pages.index.cards.3.title">Stay Updated</h3>
+          <p style="color: var(--muted); margin: 0;" data-copy="pages.index.cards.3.description">Subscribe to get the latest news, stories, and ways to support.</p>
+        </a>
+
+        <!-- Donate Card -->
+        <a href="pages/donate.html" style="text-decoration: none; padding: 2rem; border-radius: 8px; background: var(--crimson); transition: all 0.3s ease; cursor: pointer; display: flex; flex-direction: column; gap: 1rem;">
+          <div style="font-size: 32px;">❤️</div>
+          <h3 style="color: white; margin: 0; font-size: 20px;">Make a Donation</h3>
+          <p style="color: rgba(255,255,255,0.8); margin: 0;">Your support directly impacts mothers and families in need.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- MISSION -->
-  <section class="section" id="mission">
+  <section class="section" id="mission" style="display: none;">
+
     <div class="container">
       <div class="mission-grid">
         <div class="mission-text">
-          <span class="eyebrow">Our Mission</span>
-          <h2>Standing Together, Rising Together</h2>
-          <div class="divider"></div>
-          <p>Rhea Mothers Alliance Foundation is a grassroots organization dedicated to uplifting mothers across underserved communities. We believe that when a mother is empowered — with knowledge, support, and community — entire families are transformed.</p>
-          <p>Through targeted programs, advocacy efforts, and community-building initiatives, we address the real, everyday challenges that mothers face and provide pathways toward greater stability and well-being.</p>
-
-          <div class="values-list">
-            <div class="value-item">
-              <div class="value-icon">
-                <svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
-              </div>
-              <p><strong>Compassion-first</strong>Every mother's story is unique. We lead with empathy and listen before we act.</p>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-              </div>
-              <p><strong>Community-rooted</strong>Our projects are shaped by the mothers we serve, not imposed from the outside.</p>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </div>
-              <p><strong>Sisterhood</strong>No mother walks alone in our network. We build bonds that last beyond our programs.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="mission-visual">
-          <p class="mission-visual-quote">"Named after Rhea — the ancient mother of the gods — our foundation carries forward the power of maternal strength across generations."</p>
-          <div class="mission-visual-line"></div>
-          <div class="mission-pillars">
-            <div class="pillar">
-              <span class="pillar-num">12+</span>
-              <span class="pillar-label">Communities</span>
-            </div>
-            <div class="pillar">
-              <span class="pillar-num">500+</span>
-              <span class="pillar-label">Mothers Served</span>
-            </div>
-            <div class="pillar">
-              <span class="pillar-num">4</span>
-              <span class="pillar-label">Years Active</span>
-            </div>
-            <div class="pillar">
-              <span class="pillar-num">100%</span>
-              <span class="pillar-label">Community-led</span>
-            </div>
-          </div>
+          <!-- Mission content moved to pages/about.html -->
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects" style="background: white;">
+  <!-- PROJECTS - MOVED TO SEPARATE PAGE -->
+  <section class="section" id="projects" style="display: none;">
     <div class="container">
-      <div class="projects-header">
-        <span class="eyebrow">Our Work</span>
-        <h2>Projects Under Our Umbrella</h2>
-        <p style="color: var(--muted); font-size: 17px;">Each project targets a specific need — together they form a safety net for mothers at every stage.</p>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-card-banner banner-1">
-            <span class="project-tag">Health & Wellness</span>
-            <div class="project-icon-large">
-              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <h3>MamaWell</h3>
-            <p>A maternal health initiative providing free prenatal and postnatal support, mental health resources, and wellness workshops to mothers in underserved communities. MamaWell ensures no mother faces pregnancy or early motherhood without guidance and care.</p>
-            <div class="project-meta">
-              <div class="project-meta-item">
-                <strong>280+</strong>
-                Mothers enrolled
-              </div>
-              <div class="project-meta-item">
-                <strong>8</strong>
-                Partner clinics
-              </div>
-              <div class="project-meta-item">
-                <strong>2021</strong>
-                Founded
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-card-banner banner-2">
-            <span class="project-tag">Education & Skills</span>
-            <div class="project-icon-large">
-              <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <h3>Rise & Lead</h3>
-            <p>An economic empowerment program offering skills training, micro-business mentorship, and financial literacy workshops tailored for mothers re-entering the workforce or building their own path toward financial independence.</p>
-            <div class="project-meta">
-              <div class="project-meta-item">
-                <strong>220+</strong>
-                Graduates
-              </div>
-              <div class="project-meta-item">
-                <strong>15</strong>
-                Mentors
-              </div>
-              <div class="project-meta-item">
-                <strong>2023</strong>
-                Founded
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 3rem;">
-        <a href="#newsletter" class="btn btn-outline">Stay Informed About New Projects</a>
-      </div>
+      <!-- Projects content moved to pages/projects.html -->
     </div>
   </section>
 
-  <!-- IMPACT -->
-  <section class="impact-section">
+  <!-- IMPACT - MOVED TO SEPARATE PAGE -->
+  <section class="impact-section" style="display: none;">
     <div class="container">
-      <div class="impact-inner">
-        <span class="eyebrow" style="color: rgba(255,255,255,0.5);">Our Impact</span>
-        <h2>Every Number is a Mother's Story</h2>
-        <p>Behind each figure is a real life changed — a healthier pregnancy, a new skill, a family that has more choices.</p>
-        <div class="impact-grid">
-          <div class="impact-stat">
-            <span class="impact-stat-num">500+</span>
-            <span class="impact-stat-label">Mothers directly supported</span>
-          </div>
-          <div class="impact-stat">
-            <span class="impact-stat-num">12</span>
-            <span class="impact-stat-label">Communities reached</span>
-          </div>
-          <div class="impact-stat">
-            <span class="impact-stat-num">95%</span>
-            <span class="impact-stat-label">Program satisfaction rate</span>
-          </div>
-          <div class="impact-stat">
-            <span class="impact-stat-num">$0</span>
-            <span class="impact-stat-label">Cost to participants</span>
-          </div>
-        </div>
-      </div>
+      <!-- Impact content moved to pages/impact.html -->
     </div>
   </section>
 
-  <!-- NEWSLETTER -->
-  <section class="newsletter-section" id="newsletter">
+  <!-- NEWSLETTER - MOVED TO SEPARATE PAGE -->
+  <section class="newsletter-section" id="newsletter" style="display: none;">
     <div class="container">
-      <div class="newsletter-box">
-        <div class="newsletter-text">
-          <span class="eyebrow" style="color: var(--gold);">Stay Connected</span>
-          <h2>Join Our Circle</h2>
-          <p>Sign up to receive updates on our projects, stories from the mothers we serve, upcoming events, and new ways to get involved or donate. We send only what matters — no noise.</p>
-        </div>
-
-        <div class="newsletter-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" placeholder="Your first name" />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" placeholder="Your last name" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="you@example.com" />
-          </div>
-          <div class="form-group">
-            <label for="interest">I'm most interested in</label>
-            <select id="interest" style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; padding: 0.75rem 1rem; font-family: 'Inter', sans-serif; font-size: 15px; color: white; outline: none; width: 100%; appearance: none; cursor: pointer;">
-              <option value="" style="background: #1A1016;">Select an area</option>
-              <option value="health" style="background: #1A1016;">MamaWell — Health & Wellness</option>
-              <option value="skills" style="background: #1A1016;">Rise & Lead — Education & Skills</option>
-              <option value="volunteer" style="background: #1A1016;">Volunteering Opportunities</option>
-              <option value="all" style="background: #1A1016;">All Updates</option>
-            </select>
-          </div>
-          <button class="btn btn-primary" id="subscribe-btn" style="width: 100%; margin-top: 0.5rem; font-size: 15px;">Subscribe to Updates</button>
-          <div class="success-msg" id="success-msg">
-            ✓ You're in! Welcome to the Rhea community. We'll be in touch.
-          </div>
-        </div>
-      </div>
+      <!-- Newsletter content moved to pages/updates.html -->
     </div>
   </section>
 
@@ -312,9 +182,9 @@
           <h4>Navigate</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#newsletter">Updates</a></li>
+            <li><a href="pages/about.html">Mission</a></li>
+            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/updates.html">Updates</a></li>
             <li><a href="pages/donate.html">Donate</a></li>
           </ul>
         </div>
@@ -335,6 +205,7 @@
     </div>
   </footer>
 
+  <script src="js/copy.js"></script>
   <script>
     // Hamburger menu
     const hamburger = document.getElementById('hamburger');
@@ -346,32 +217,6 @@
     // Close mobile menu on link click
     mobileMenu.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => mobileMenu.classList.remove('open'));
-    });
-
-    // Newsletter form
-    document.getElementById('subscribe-btn').addEventListener('click', function() {
-      const email = document.getElementById('email').value.trim();
-      const firstName = document.getElementById('first-name').value.trim();
-      if (!email || !email.includes('@')) {
-        document.getElementById('email').style.borderColor = '#C2304F';
-        document.getElementById('email').focus();
-        return;
-      }
-      this.textContent = 'Subscribed!';
-      this.disabled = true;
-      this.style.background = '#3B6D11';
-      document.getElementById('success-msg').style.display = 'block';
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
     });
   </script>
 </body>
