@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate — Rhea Mothers Alliance Foundation</title>
+  <meta name="description" content="Your donation empowers mothers through health, education, and community programs. Give today to the Rhea Mothers Alliance Foundation." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-mark">R</div>
+      <div class="nav-logo-text">
+        Rhea Mothers Alliance
+        <span>Foundation</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#mission">Mission</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#newsletter">Updates</a></li>
+      <li><a href="donate.html" class="btn-donate-nav active">Donate</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#mission">Mission</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#newsletter">Updates</a>
+    <a href="donate.html">Donate</a>
+  </div>
+
+  <!-- DONATE HERO -->
+  <section class="donate-hero">
+    <div class="container">
+      <span class="eyebrow" style="color: var(--gold); justify-content: center; display: block; text-align: center;">Support Our Work</span>
+      <h1>Give the Gift of Strength</h1>
+      <p>Every contribution goes directly to programs that uplift mothers and transform communities. No overhead surprises — your gift works.</p>
+    </div>
+  </section>
+
+  <!-- DONATE CONTENT -->
+  <section class="donate-content">
+    <div class="container">
+      <div class="donate-grid">
+
+        <!-- FORM -->
+        <div class="donate-form-card">
+          <h2>Make a Donation</h2>
+          <p>All donations are tax-deductible. You'll receive a receipt via email.</p>
+
+          <!-- Frequency toggle -->
+          <div class="frequency-toggle" id="freq-toggle">
+            <button class="freq-btn active" data-freq="once">Give Once</button>
+            <button class="freq-btn" data-freq="monthly">Give Monthly</button>
+            <button class="freq-btn" data-freq="annual">Give Annually</button>
+          </div>
+
+          <!-- Amount selection -->
+          <div class="amount-grid" id="amount-grid">
+            <button class="amount-btn" data-amount="25">$25</button>
+            <button class="amount-btn active" data-amount="50">$50</button>
+            <button class="amount-btn" data-amount="100">$100</button>
+            <button class="amount-btn" data-amount="250">$250</button>
+            <button class="amount-btn" data-amount="500">$500</button>
+            <button class="amount-btn" data-amount="1000">$1,000</button>
+          </div>
+
+          <div class="custom-amount">
+            <span>$</span>
+            <input type="number" id="custom-amount" placeholder="Other amount" min="1" />
+          </div>
+
+          <!-- Impact line -->
+          <div id="impact-line" style="background: rgba(155,28,58,0.06); border-left: 3px solid var(--crimson); padding: 0.75rem 1rem; border-radius: 0 4px 4px 0; margin-bottom: 1.5rem; font-size: 14px; color: var(--ink-soft);">
+            <strong style="color: var(--crimson);">$50</strong> provides one month of MamaWell wellness support for a mother in need.
+          </div>
+
+          <!-- Donor fields -->
+          <div class="donate-form-fields">
+            <div class="form-row">
+              <div>
+                <label for="d-first">First Name</label>
+                <input type="text" id="d-first" placeholder="First name" />
+              </div>
+              <div>
+                <label for="d-last">Last Name</label>
+                <input type="text" id="d-last" placeholder="Last name" />
+              </div>
+            </div>
+            <div>
+              <label for="d-email">Email Address</label>
+              <input type="email" id="d-email" placeholder="you@example.com" />
+            </div>
+            <div>
+              <label for="d-project">Designate My Gift To (Optional)</label>
+              <select id="d-project">
+                <option value="general">Where it's needed most</option>
+                <option value="mamawell">MamaWell — Health & Wellness</option>
+                <option value="riseleaad">Rise & Lead — Education & Skills</option>
+              </select>
+            </div>
+            <div>
+              <label for="d-message">Dedicate This Gift (Optional)</label>
+              <input type="text" id="d-message" placeholder="In honor of… / In memory of…" />
+            </div>
+
+            <!-- Placeholder payment note -->
+            <div style="background: rgba(0,0,0,0.03); border: 1.5px dashed rgba(0,0,0,0.12); border-radius: 6px; padding: 1.25rem; text-align: center; margin-top: 0.5rem;">
+              <p style="font-size: 13px; color: var(--muted); margin: 0;">
+                <strong style="display: block; margin-bottom: 0.35rem; color: var(--ink);">Payment Gateway</strong>
+                Connect your payment processor here (e.g. Stripe, PayPal, Canada Helps). This area is a placeholder ready for integration.
+              </p>
+            </div>
+
+            <button class="btn btn-primary" id="donate-btn" style="width: 100%; font-size: 15px; padding: 1rem;">
+              Donate $50 Now
+            </button>
+
+            <div class="success-msg" id="donate-success" style="color: #3B6D11; background: rgba(59,109,17,0.1); border-color: rgba(59,109,17,0.3);">
+              ✓ Thank you for your generous donation! A receipt will be sent to your email.
+            </div>
+          </div>
+
+          <div class="secure-note">
+            <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Secure, encrypted transaction. 100% of your gift goes to our programs.
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="donate-sidebar">
+          <span class="eyebrow">Your Donation At Work</span>
+          <h3>What Your Gift Makes Possible</h3>
+
+          <div class="impact-levels" id="impact-levels">
+            <div class="impact-level" data-amount="25">
+              <div class="impact-level-amount">$25</div>
+              <div class="impact-level-desc">
+                <strong>A Hand to Hold</strong>
+                Funds one peer-support session for a new mother navigating early motherhood alone.
+              </div>
+            </div>
+            <div class="impact-level" data-amount="50">
+              <div class="impact-level-amount">$50</div>
+              <div class="impact-level-desc">
+                <strong>A Month of Wellness</strong>
+                Covers one month of MamaWell wellness resources and check-ins for a mother in our program.
+              </div>
+            </div>
+            <div class="impact-level" data-amount="100">
+              <div class="impact-level-amount">$100</div>
+              <div class="impact-level-desc">
+                <strong>Skills for Life</strong>
+                Sponsors one Rise & Lead workshop module, giving a mother new tools for economic independence.
+              </div>
+            </div>
+            <div class="impact-level" data-amount="250">
+              <div class="impact-level-amount">$250</div>
+              <div class="impact-level-desc">
+                <strong>A Season of Support</strong>
+                Provides a full quarter of programming for one mother across both of our active projects.
+              </div>
+            </div>
+            <div class="impact-level" data-amount="500">
+              <div class="impact-level-amount">$500</div>
+              <div class="impact-level-desc">
+                <strong>Community Builder</strong>
+                Funds a full community workshop bringing together 20+ mothers for learning and sisterhood.
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial -->
+          <div style="background: var(--ink); border-radius: 8px; padding: 2rem; margin-top: 2.5rem;">
+            <span style="font-family:'Playfair Display',serif; font-size:2.5rem; color: var(--crimson-light); line-height:0.5; display:block; margin-bottom: 1rem; opacity: 0.7;">"</span>
+            <p style="font-family:'Playfair Display',serif; font-style:italic; color:rgba(255,255,255,0.85); font-size:15px; line-height:1.6; margin-bottom:1rem;">Rise & Lead gave me more than skills — it gave me the confidence to believe I could build something for my family.</p>
+            <p style="font-size:12px; font-weight:600; color: var(--gold-light); letter-spacing: 0.06em; text-transform: uppercase;">— Maria T., Rise & Lead Graduate</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT STRIP -->
+  <section class="impact-section" style="padding: 4rem 0;">
+    <div class="container">
+      <div class="impact-inner">
+        <div class="impact-grid">
+          <div class="impact-stat">
+            <span class="impact-stat-num">100%</span>
+            <span class="impact-stat-label">Goes to programs</span>
+          </div>
+          <div class="impact-stat">
+            <span class="impact-stat-num">$0</span>
+            <span class="impact-stat-label">Overhead from donations</span>
+          </div>
+          <div class="impact-stat">
+            <span class="impact-stat-num">500+</span>
+            <span class="impact-stat-label">Lives impacted</span>
+          </div>
+          <div class="impact-stat">
+            <span class="impact-stat-num">4 yrs</span>
+            <span class="impact-stat-label">Of trust & transparency</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <div class="nav-logo-mark" style="background: var(--crimson);">R</div>
+            <div style="font-family:'Playfair Display',serif; font-size:16px; font-weight:700; color:white; line-height:1.2;">
+              Rhea Mothers Alliance<br>
+              <span style="font-family:'Inter',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.4);">Foundation</span>
+            </div>
+          </div>
+          <p>Empowering mothers, transforming communities. A non-profit organization dedicated to the well-being of mothers and families.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#mission">Mission</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#newsletter">Updates</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:hello@rheafoundation.org">hello@rheafoundation.org</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Rhea Mothers Alliance Foundation. All rights reserved.</span>
+        <span>Made with purpose · <a href="#">Privacy Policy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    });
+
+    // Impact descriptions per amount
+    const impactMap = {
+      25: '$25 funds one peer-support session for a new mother navigating early motherhood.',
+      50: '$50 provides one month of MamaWell wellness support for a mother in need.',
+      100: '$100 sponsors one Rise & Lead workshop module for economic empowerment.',
+      250: '$250 covers a full quarter of programming across both our active projects.',
+      500: '$500 funds a full community workshop bringing 20+ mothers together.',
+      1000: '$1,000 sponsors an entire cohort of Rise & Lead participants for one month.',
+    };
+
+    let selectedAmount = 50;
+
+    function updateImpactLine(amount) {
+      const line = document.getElementById('impact-line');
+      const desc = impactMap[amount] || `$${amount} makes a meaningful difference for mothers in our programs.`;
+      const amountStr = amount >= 1000 ? `$${(amount/1000).toFixed(0)},000` : `$${amount}`;
+      line.innerHTML = `<strong style="color:var(--crimson);">${amountStr}</strong> ${desc.replace(/^\$\d+[,\d]* /, '')}`;
+    }
+
+    function updateDonateBtn(amount) {
+      const amountStr = amount >= 1000 ? `$${(amount/1000).toFixed(0)},000` : `$${amount}`;
+      document.getElementById('donate-btn').textContent = `Donate ${amountStr} Now`;
+    }
+
+    // Amount buttons
+    document.querySelectorAll('.amount-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        selectedAmount = parseInt(this.dataset.amount);
+        document.getElementById('custom-amount').value = '';
+        updateImpactLine(selectedAmount);
+        updateDonateBtn(selectedAmount);
+      });
+    });
+
+    // Custom amount
+    document.getElementById('custom-amount').addEventListener('input', function() {
+      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+      const val = parseInt(this.value);
+      if (val > 0) {
+        selectedAmount = val;
+        updateImpactLine(val);
+        updateDonateBtn(val);
+      }
+    });
+
+    // Frequency toggle
+    document.querySelectorAll('.freq-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Impact levels click to select
+    document.querySelectorAll('.impact-level').forEach(level => {
+      level.addEventListener('click', function() {
+        const amount = parseInt(this.dataset.amount);
+        document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+        const matchBtn = document.querySelector(`.amount-btn[data-amount="${amount}"]`);
+        if (matchBtn) matchBtn.classList.add('active');
+        selectedAmount = amount;
+        document.getElementById('custom-amount').value = '';
+        updateImpactLine(amount);
+        updateDonateBtn(amount);
+        document.querySelector('.donate-form-card').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Donate button
+    document.getElementById('donate-btn').addEventListener('click', function() {
+      const email = document.getElementById('d-email').value.trim();
+      if (!email || !email.includes('@')) {
+        document.getElementById('d-email').style.borderColor = '#C2304F';
+        document.getElementById('d-email').focus();
+        return;
+      }
+      this.textContent = 'Thank You! ✓';
+      this.disabled = true;
+      this.style.background = '#3B6D11';
+      document.getElementById('donate-success').style.display = 'block';
+    });
+
+    updateImpactLine(50);
+  </script>
+</body>
+</html>
