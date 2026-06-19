@@ -147,7 +147,7 @@ window.siteCopy = {
     updates: {
       hero: {
         tag: 'Stay Connected',
-        heading: 'Latest Updates',
+        heading: 'Stay Connected',
         description: 'Get the latest news, stories, and ways to support mothers in our community.'
       },
       newsletter: {
