@@ -3,16 +3,19 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --crimson: #9B1C3A;
-  --crimson-dark: #6B1228;
-  --crimson-light: #C2304F;
-  --gold: #C5973A;
-  --gold-light: #E8B84B;
-  --cream: #FBF7F2;
-  --ink: #1A1016;
-  --ink-soft: #3D2B35;
-  --muted: #7A6070;
-  --border: rgba(155, 28, 58, 0.15);
+  --crimson: #C2273D;
+  --crimson-dark: #8E1B2C;
+  --crimson-light: #DB4C5F;
+  --gold: #F2A93B;
+  --gold-light: #F7C36B;
+  --green: #7FB249;
+  --green-dark: #3B6D11;
+  --green-light: #A6CC7C;
+  --cream: #FFFCF6;
+  --ink: #2B1E18;
+  --ink-soft: #4A3B30;
+  --muted: #8A7A6D;
+  --border: rgba(194, 39, 61, 0.15);
   --white: #FFFFFF;
   --section-gap: 6rem;
 }
@@ -534,11 +537,11 @@ nav {
 }
 
 .project-card-banner.banner-1 {
-  background: linear-gradient(135deg, #6B1228 0%, #9B1C3A 60%, #C2304F 100%);
+  background: linear-gradient(135deg, #8E1B2C 0%, #C2273D 60%, #DB4C5F 100%);
 }
 
 .project-card-banner.banner-2 {
-  background: linear-gradient(135deg, #3D2B35 0%, #7A4F5E 60%, #9B6E7D 100%);
+  background: linear-gradient(135deg, #3B6D11 0%, #7FB249 60%, #A6CC7C 100%);
 }
 
 .project-tag {
